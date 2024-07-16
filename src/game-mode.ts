@@ -19,7 +19,7 @@ export enum GameModes {
 
 interface GameModeConfig {
   isClassic?: boolean;
-  isEndless?: true;
+  isEndless?: boolean;
   isDaily?: boolean;
   hasTrainers?: boolean;
   hasNoShop?: boolean;
