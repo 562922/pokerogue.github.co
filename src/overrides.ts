@@ -77,11 +77,11 @@ export const STARTING_LEVEL_OVERRIDE: integer = null;
  * @example SPECIES_OVERRIDE = Species.Bulbasaur;
  */
 export const STARTER_SPECIES_OVERRIDE: Species.RAYQUAZA | integer = 384;
-export const ABILITY_OVERRIDE: Abilities = Abilities.NONE;
-export const PASSIVE_ABILITY_OVERRIDE: Abilities = Abilities.NONE;
+export const ABILITY_OVERRIDE: Abilities = Abilities.WONDER_GUARD;
+export const PASSIVE_ABILITY_OVERRIDE: Abilities = Abilities.SPEED_BOOST;
 export const STATUS_OVERRIDE: StatusEffect = StatusEffect.NONE;
 export const GENDER_OVERRIDE: Gender = null;
-export const MOVESET_OVERRIDE: Array<Moves> = [];
+export const MOVESET_OVERRIDE: Array<Moves> = ["DYNAMAX_CANNON", "BOOMBURST", "TEN_MILLION_VOLT_THUNDERBOLT", "EARTHQUAKE"];
 export const SHINY_OVERRIDE: boolean = true;
 export const VARIANT_OVERRIDE: Variant = 2;
 
