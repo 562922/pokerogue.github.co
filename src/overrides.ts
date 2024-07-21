@@ -33,22 +33,22 @@ export const SEED_OVERRIDE: string = "";
 export const WEATHER_OVERRIDE: WeatherType = WeatherType.NONE;
 export const DOUBLE_BATTLE_OVERRIDE: boolean = false;
 export const SINGLE_BATTLE_OVERRIDE: boolean = false;
-export const STARTING_WAVE_OVERRIDE: integer = 0;
-export const STARTING_BIOME_OVERRIDE: Biome = Biome.TOWN;
+export const STARTING_WAVE_OVERRIDE: integer = 200;
+export const STARTING_BIOME_OVERRIDE: Biome = Biome.END;
 export const ARENA_TINT_OVERRIDE: TimeOfDay = null;
 // Multiplies XP gained by this value including 0. Set to null to ignore the override
 export const XP_MULTIPLIER_OVERRIDE: number = 10000;
 // default 1000
-export const STARTING_MONEY_OVERRIDE: integer = 999999;
+export const STARTING_MONEY_OVERRIDE: integer = 9999999999999;
 export const FREE_CANDY_UPGRADE_OVERRIDE: boolean = true;
 export const POKEBALL_OVERRIDE: { active: boolean, pokeballs: PokeballCounts } = {
-  active: true,
+  active: false,
   pokeballs: {
-    [PokeballType.POKEBALL]: 50,
-    [PokeballType.GREAT_BALL]: 50,
-    [PokeballType.ULTRA_BALL]: 50,
-    [PokeballType.ROGUE_BALL]: 50,
-    [PokeballType.MASTER_BALL]: 50,
+    [PokeballType.POKEBALL]: 5,
+    [PokeballType.GREAT_BALL]: 0,
+    [PokeballType.ULTRA_BALL]: 0,
+    [PokeballType.ROGUE_BALL]: 0,
+    [PokeballType.MASTER_BALL]: 0,
   }
 };
 
@@ -69,21 +69,21 @@ export const POKEBALL_OVERRIDE: { active: boolean, pokeballs: PokeballCounts } =
 export const STARTER_FORM_OVERRIDES: Partial<Record<Species, number>> = {};
 
 // default 5 or 20 for Daily
-export const STARTING_LEVEL_OVERRIDE: integer = 0;
+export const STARTING_LEVEL_OVERRIDE: integer = null;
 /**
  * SPECIES OVERRIDE
  * will only apply to the first starter in your party or each enemy pokemon
  * default is 0 to not override
  * @example SPECIES_OVERRIDE = Species.Bulbasaur;
  */
-export const STARTER_SPECIES_OVERRIDE: Species | integer = 99;
+export const STARTER_SPECIES_OVERRIDE: Species.RAYQUAZA | integer = 384;
 export const ABILITY_OVERRIDE: Abilities = Abilities.NONE;
 export const PASSIVE_ABILITY_OVERRIDE: Abilities = Abilities.NONE;
 export const STATUS_OVERRIDE: StatusEffect = StatusEffect.NONE;
 export const GENDER_OVERRIDE: Gender = null;
 export const MOVESET_OVERRIDE: Array<Moves> = [];
 export const SHINY_OVERRIDE: boolean = true;
-export const VARIANT_OVERRIDE: Variant = 3;
+export const VARIANT_OVERRIDE: Variant = 2;
 
 /**
  * OPPONENT / ENEMY OVERRIDES
@@ -96,19 +96,19 @@ export const OPP_PASSIVE_ABILITY_OVERRIDE: Abilities = Abilities.NONE;
 export const OPP_STATUS_OVERRIDE: StatusEffect = StatusEffect.NONE;
 export const OPP_GENDER_OVERRIDE: Gender = null;
 export const OPP_MOVESET_OVERRIDE: Array<Moves> = [];
-export const OPP_SHINY_OVERRIDE: boolean = true;
-export const OPP_VARIANT_OVERRIDE: Variant = 3;
+export const OPP_SHINY_OVERRIDE: boolean = false;
+export const OPP_VARIANT_OVERRIDE: Variant = null;
 export const OPP_IVS_OVERRIDE: integer | integer[] = [];
 
 /**
  * EGG OVERRIDES
  */
 
-export const EGG_IMMEDIATE_HATCH_OVERRIDE: boolean = false;
-export const EGG_TIER_OVERRIDE: EggTier = 5;
+export const EGG_IMMEDIATE_HATCH_OVERRIDE: boolean = true;
+export const EGG_TIER_OVERRIDE: EggTier = 4;
 export const EGG_SHINY_OVERRIDE: boolean = true;
 export const EGG_VARIANT_OVERRIDE: VariantTier = 3;
-export const EGG_FREE_GACHA_PULLS_OVERRIDE: boolean = ture;
+export const EGG_FREE_GACHA_PULLS_OVERRIDE: boolean = true;
 export const EGG_GACHA_PULL_COUNT_OVERRIDE: number = 99;
 
 /**
@@ -141,10 +141,26 @@ export const STARTING_HELD_ITEMS_OVERRIDE: Array<ModifierOverride> = [
   {name: "EXP_CHARM", count: 200},
   {name: "SUPER_EXP_CHARM", count: 300},
   {name: "CANDY_JAR", count: 399},
-  {name: "HEALING_CHARM", count: 5}
+  {name: "HEALING_CHARM", count: 5},
+  {name: "GOLDEN_EXP_CHARM", count: 50},
+  {name: "GOLDEN_POKEBALL", count: 5},
+  {name: "GOLDEN_EGG", count: 99},
+  {name: "GOLDEN_PUNCH", count: 99},
+  {name: "LOCK_CAPSULE", count: 1},
+  {name: "GRIP_CLAW", count: 15},
+  {name: "QUICK_CLAW", count: 99},
+  {name: "KINGS_ROCK", count: 99},
+  {name: "LEFTOVERS", count: 99},
+  {name: "SHELL_BELL", count: 99},
+  {name: "SHINY_CHARM", count: 99},
+  {name: "ABILITY_CHARM", count: 99},
+  {name: "MINI_BLACK_HOLE", count: 99},
+  {name: "AMULET_COIN", count: 99},
+  {name: "MEGA_BRACELET", count: 1},
+  {name: "DYNAMAX_BAND", count: 1}
 ];
 export const OPP_HELD_ITEMS_OVERRIDE: Array<ModifierOverride> = [];
-export const NEVER_CRIT_OVERRIDE: boolean = false;
+export const NEVER_CRIT_OVERRIDE: boolean = true;
 
 /**
  * An array of items by keys as defined in the "modifierTypes" object in the "modifier/modifier-type.ts" file.
