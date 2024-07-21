@@ -77,7 +77,7 @@ export const STARTING_LEVEL_OVERRIDE: integer = null;
  * @example SPECIES_OVERRIDE = Species.Bulbasaur;
  */
 export const STARTER_SPECIES_OVERRIDE: Species.RAYQUAZA | integer = 384;
-export const ABILITY_OVERRIDE: Abilities = Abilities.AIR_LOCK;
+export const ABILITY_OVERRIDE: Abilities = Abilities.NONE;
 export const PASSIVE_ABILITY_OVERRIDE: Abilities = Abilities.NONE;
 export const STATUS_OVERRIDE: StatusEffect = StatusEffect.NONE;
 export const GENDER_OVERRIDE: Gender = null;
@@ -107,7 +107,7 @@ export const OPP_IVS_OVERRIDE: integer | integer[] = [];
 export const EGG_IMMEDIATE_HATCH_OVERRIDE: boolean = true;
 export const EGG_TIER_OVERRIDE: EggTier = 4;
 export const EGG_SHINY_OVERRIDE: boolean = true;
-export const EGG_VARIANT_OVERRIDE: VariantTier = 3;
+export const EGG_VARIANT_OVERRIDE: VariantTier = 2;
 export const EGG_FREE_GACHA_PULLS_OVERRIDE: boolean = true;
 export const EGG_GACHA_PULL_COUNT_OVERRIDE: number = 99;
 
