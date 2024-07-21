@@ -33,22 +33,22 @@ export const SEED_OVERRIDE: string = "";
 export const WEATHER_OVERRIDE: WeatherType = WeatherType.NONE;
 export const DOUBLE_BATTLE_OVERRIDE: boolean = false;
 export const SINGLE_BATTLE_OVERRIDE: boolean = false;
-export const STARTING_WAVE_OVERRIDE: integer = 200;
-export const STARTING_BIOME_OVERRIDE: Biome = Biome.END;
+export const STARTING_WAVE_OVERRIDE: integer = null;
+export const STARTING_BIOME_OVERRIDE: Biome = Biome.TOWN;
 export const ARENA_TINT_OVERRIDE: TimeOfDay = null;
 // Multiplies XP gained by this value including 0. Set to null to ignore the override
-export const XP_MULTIPLIER_OVERRIDE: number = 10000;
+export const XP_MULTIPLIER_OVERRIDE: number = null;
 // default 1000
 export const STARTING_MONEY_OVERRIDE: integer = 9999999999999;
 export const FREE_CANDY_UPGRADE_OVERRIDE: boolean = true;
 export const POKEBALL_OVERRIDE: { active: boolean, pokeballs: PokeballCounts } = {
   active: false,
   pokeballs: {
-    [PokeballType.POKEBALL]: 5,
-    [PokeballType.GREAT_BALL]: 0,
-    [PokeballType.ULTRA_BALL]: 0,
-    [PokeballType.ROGUE_BALL]: 0,
-    [PokeballType.MASTER_BALL]: 0,
+    [PokeballType.POKEBALL]: 50,
+    [PokeballType.GREAT_BALL]: 50,
+    [PokeballType.ULTRA_BALL]: 50,
+    [PokeballType.ROGUE_BALL]: 50,
+    [PokeballType.MASTER_BALL]: 50,
   }
 };
 
@@ -77,7 +77,7 @@ export const STARTING_LEVEL_OVERRIDE: integer = null;
  * @example SPECIES_OVERRIDE = Species.Bulbasaur;
  */
 export const STARTER_SPECIES_OVERRIDE: Species.RAYQUAZA | integer = 384;
-export const ABILITY_OVERRIDE: Abilities = Abilities.NONE;
+export const ABILITY_OVERRIDE: Abilities = Abilities.AIR_LOCK;
 export const PASSIVE_ABILITY_OVERRIDE: Abilities = Abilities.NONE;
 export const STATUS_OVERRIDE: StatusEffect = StatusEffect.NONE;
 export const GENDER_OVERRIDE: Gender = null;
