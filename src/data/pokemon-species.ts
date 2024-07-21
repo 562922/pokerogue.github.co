@@ -137,7 +137,7 @@ export abstract class PokemonSpeciesForm {
   public baseFriendship: integer;
   public baseExp: integer;
   public genderDiffs: boolean;
-  public isStarterSelectable: boolean;
+  public isStarterSelectable: true;
 
   constructor(type1: Type, type2: Type, height: number, weight: number, ability1: Abilities, ability2: Abilities, abilityHidden: Abilities,
     baseTotal: integer, baseHp: integer, baseAtk: integer, baseDef: integer, baseSpatk: integer, baseSpdef: integer, baseSpd: integer,
