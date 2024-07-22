@@ -42,7 +42,7 @@ export const XP_MULTIPLIER_OVERRIDE: number = null;
 export const STARTING_MONEY_OVERRIDE: integer = 9999999999999;
 export const FREE_CANDY_UPGRADE_OVERRIDE: boolean = true;
 export const POKEBALL_OVERRIDE: { active: boolean, pokeballs: PokeballCounts } = {
-  active: false,
+  active: true,
   pokeballs: {
     [PokeballType.POKEBALL]: 50,
     [PokeballType.GREAT_BALL]: 50,
@@ -109,7 +109,7 @@ export const EGG_TIER_OVERRIDE: EggTier = 4;
 export const EGG_SHINY_OVERRIDE: boolean = true;
 export const EGG_VARIANT_OVERRIDE: VariantTier = 2;
 export const EGG_FREE_GACHA_PULLS_OVERRIDE: boolean = true;
-export const EGG_GACHA_PULL_COUNT_OVERRIDE: number = 99;
+export const EGG_GACHA_PULL_COUNT_OVERRIDE: number = 999;
 
 /**
  * MODIFIER / ITEM OVERRIDES
@@ -168,4 +168,4 @@ export const NEVER_CRIT_OVERRIDE: boolean = true;
  * If less items are listed than rolled, only some items will be replaced
  * If more items are listed than rolled, only the first X items will be shown, where X is the number of items rolled.
  */
-export const ITEM_REWARD_OVERRIDE: Array<String> = [];
+export const ITEM_REWARD_OVERRIDE: Array<String> = ["RARER_CANDY"];
